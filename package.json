@@ -4,9 +4,10 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "boost-update": "sed -i '' 's|https://archives.boost.io/release/1.83.0/source/boost_1_83_0.tar.bz2|https://sourceforge.net/projects/boost/files/boost/1.83.0/boost_1_83_0.tar.bz2|g' ./node_modules/react-native/third-party-podspecs/boost.podspec"
   },
   "dependencies": {
     "expo": "~50.0.13",
